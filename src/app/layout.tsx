@@ -5,7 +5,6 @@ const sarabun = Sarabun({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-sarabun",
   display: "swap",
 });
 
