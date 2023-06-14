@@ -3,19 +3,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { title } from "process";
 import React, { useState } from "react";
+import "./Navbar.css";
 
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="container px-5 py-4">
-      <nav className="flex justify-between space-x-5">
-        <div>
-          <div className="flex justify-start">
-            <Link href="/">
-              <Image src="/logo.svg" width={160} height={80} alt="LOGO"></Image>
-            </Link>
-          </div>
+    <div className="container px-5 py-3">
+      <nav className="flex justify-between space-x-5 px-5 py-3">
+        <div className="flex justify-start">
+          <Image src="/logo.svg" width={200} height={50} alt="LOGO"></Image>
         </div>
+
         <div className="flex justify-end">
           {[
             ["หน้าหลัก", "/"],
@@ -24,11 +22,9 @@ function NavBar() {
             ["ข้อมูลเฉพาะจังหวัด", "/"],
             ["สถิติ", "/"],
           ].map(([title, url]) => (
-            <a
-              href={url}
-              className="px-5 py-4 text-slate-700 font-medium hover:bg-slate-100 hover:text-slate-900"
-            >
+            <a href={url} className="px-5 py-4 menu-nav">
               {title}
+              <span className="liner-gray"></span>
             </a>
           ))}
         </div>

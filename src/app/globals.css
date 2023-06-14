@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: var(--font-sarabun);
+}
+
+@layer base {
+  :root {
+    --color-white: #fafaf9;
+    --color-gray: #828282;
+    --color-gray-light: #bbbbbe;
+    --color-blue: #162F65;
+    --color-yellow: #E8AF30;
+    --color-yellow-light: #E8C766;
+  }
+}
 /* body {
   font-family: 'Sarabun', sans-serif;
 } */
