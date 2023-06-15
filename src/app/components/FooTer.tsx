@@ -5,11 +5,11 @@ import "./Footer.css";
 function FooTer() {
   const [footer, setFooter] = useState(false);
   return (
-    <div className="container">
-      <footer>
-        <div className="footer-blog flex justify-between">
-          <div className="flex flex-row items-center">
-            <div className="justify-start">
+    <div className="footer-blog flex flex-row justify-center items-center">
+      <div className="container">
+        <footer className="flex justify-between items-center">
+          <div className="flex flex-row">
+            <div className="justify-start ">
               <ul className="footer-text">
                 <li>ศูนย์เทคโนโลยีและการสื่อสาร สำนักงานปลัดกระทรวงมหาดไทย</li>
                 <li>โทรศัพท์ 02 282 6560 ต่อ 50657 หรือ 50348</li>
@@ -17,13 +17,19 @@ function FooTer() {
               </ul>
             </div>
           </div>
-          <div className="flex flex-row items-center">
-            <div className="justify-end">
-              <img src="/banner.png" alt="BANNER" className="banner-blog"></img>
+          <div className="flex justify-between">
+            <div className="flex flex-row">
+              <div className="justify-end">
+                <img
+                  className="banner-blog"
+                  src="/banner.png"
+                  alt="BANNER"
+                ></img>
+              </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </div>
   );
 }

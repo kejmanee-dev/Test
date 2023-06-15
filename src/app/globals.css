@@ -24,7 +24,7 @@ body {
 }
 
 .main-content {
-  min-height: calc(100vh - 262px);
+  min-height: calc(100vh - 252px);
 }
 /* body {
   font-family: 'Sarabun', sans-serif;

@@ -1,7 +1,7 @@
 .footer-blog {
   background-color: var(--color-gray-light);
   width: 100%;
-  height: 150px;
+  height: 140px;
 }
 
 .footer-text li{
@@ -13,9 +13,8 @@
   padding-right: 2rem;
 }
 
-.banner-blog img {
-  max-height: 150px;
-  max-width: 200px;
+.banner-blog {
+  max-height: 130px;
   display: flex;
   justify-items: center;
 }
