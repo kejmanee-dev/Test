@@ -8,27 +8,34 @@ import "./Navbar.css";
 function NavBar() {
   const [navbar, setNavbar] = useState(false);
   return (
-    <div className="container px-5 py-3">
-      <nav className="flex justify-between space-x-5 px-5 py-3">
-        <div className="flex justify-start">
-          <Image src="/logo.svg" width={200} height={50} alt="LOGO"></Image>
-        </div>
+    <div className="flex flex-row justify-center">
+      <div className="container">
+        <div className="top-line"></div>
+        <nav className="flex justify-between py-2">
+          <div className="flex justify-start px-5">
+            <Image src="/logo.svg" width={200} height={50} alt="LOGO"></Image>
+          </div>
 
-        <div className="flex justify-end">
-          {[
-            ["หน้าหลัก", "/"],
-            ["กฎหมาย/ระเบียบ", "/"],
-            ["มาตรการดูแลผู้สูงอายุ", "/"],
-            ["ข้อมูลเฉพาะจังหวัด", "/"],
-            ["สถิติ", "/"],
-          ].map(([title, url]) => (
-            <a href={url} className="px-5 py-4 menu-nav">
-              {title}
-              <span className="liner-gray"></span>
-            </a>
-          ))}
-        </div>
-      </nav>
+          <div className="justify-end py-3">
+            <ul className="flex flex-row">
+              {[
+                ["หน้าหลัก", "/"],
+                ["กฎหมาย/ระเบียบ", "/"],
+                ["มาตรการดูแลผู้สูงอายุ", "/"],
+                ["ข้อมูลเฉพาะจังหวัด", "/"],
+                ["สถิติ", "/"],
+              ].map(([title, url]) => (
+                <li>
+                  <a href={url} className="px-5 menu-nav liner-gray">
+                    {title}
+                    {/* <span className="liner-gray"></span> */}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
 
     /* <div className="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">

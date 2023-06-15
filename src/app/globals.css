@@ -6,15 +6,25 @@ html {
   font-family: var(--font-sarabun);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
 @layer base {
   :root {
     --color-white: #fafaf9;
     --color-gray: #828282;
     --color-gray-light: #bbbbbe;
-    --color-blue: #162F65;
-    --color-yellow: #E8AF30;
-    --color-yellow-light: #E8C766;
+    --color-blue: #162f65;
+    --color-yellow: #e8af30;
+    --color-yellow-light: #e8c766;
   }
+}
+
+.main-content {
+  min-height: calc(100vh - 262px);
 }
 /* body {
   font-family: 'Sarabun', sans-serif;

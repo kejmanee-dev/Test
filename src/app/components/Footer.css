@@ -1,0 +1,21 @@
+.footer-blog {
+  background-color: var(--color-gray-light);
+  width: 100%;
+  height: 150px;
+}
+
+.footer-text li{
+  font-size: 24px;
+  padding-left: 2rem;
+}
+
+.banner-blog {
+  padding-right: 2rem;
+}
+
+.banner-blog img {
+  max-height: 150px;
+  max-width: 200px;
+  display: flex;
+  justify-items: center;
+}
